@@ -1,12 +1,12 @@
 function validarlogin(){
 	
-	var usr = "62079";
-	var psw = "Viejosabroso"; 
+	var usr = "123456"; //cualquier corp, es temporal esta config 
+	var psw = "12345"; //cualquier password, es temporal esta config
 
 	if (document.loginform.username.value==usr && document.loginform.pass.value==psw) {
 		
 		window.location = 
-		"file:///C:/Users/62079/Documents/SegTI_Ciberseguridad/RFC_Project/src/home.html";
+		"./RFC_Project/src/home.html";
 		return false; 
 	}else{
 	

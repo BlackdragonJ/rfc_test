@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RFC Aceptado</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrapp.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/icon-font.css">
+	<link rel="stylesheet" type="text/css" href="./css/animate.css">
+	<link rel="stylesheet" type="text/css" href="./css/hamburgers.css">
+	<link rel="stylesheet" type="text/css" href="./css/select2.css">
+	<link rel="stylesheet" type="text/css" href="./css/util.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<meta name="robots" content="noindex, follow">
+	<style type="text/css">
+
+	.status {
+      border-radius: 2%;
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-family: Mukta, sans-serif;
+  	  display: grid;
+
+	}
+    .pending {
+      background-color: #fff0c2;
+      color: #a68b00;
+    }
+
+    .paid {
+      background-color: #c8e6c9;
+      color: #388e3c;
+    }
+
+    .unpaid {
+      background-color: #ffcdd2;
+      color: #c62828;
+    }
+
+.parent button{
+  padding: 5px;
+ 	background-color: transparent;
+  font-size: 1.5em;
+  height: 700px;
+  border: 0px;
+  width: 390px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button1{
+	border-radius: 10px;
+}
+.parent button:active {
+  transform: translateY(2px);
+}
+
+.parent button:not(:first-child) {
+  margin-top: 10px;
+}
+.background{
+	background-color: rgb(0, 56, 101);	
+}
+
+strong{
+	font-weight: bold;
+}
+
+.apadding{
+	position: relative;
+	color: white;
+	right: 300px;
+}
+
+.bpadding{
+	position: relative;
+	color: white;
+	right: 300px;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+</head>
+<body>
+
+ 
+	<div>		
+				<nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(45, 140, 158);">
+						  <p class="navbar-brand">RFC</p>
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon"></span>
+						  </button>
+
+						  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						    <ul class="navbar-nav mr-auto">
+						      <li class="nav-item active">
+						        <a class="nav-link" href="home.html"><img src="./images/home_icon.ico"></img><span class="sr-only"></span></a>
+						      </li>
+						    </ul>
+						    <div>
+						    	<strong>
+						    	<ul class="navbar-nav mr-auto">
+						    		<li class="nav-link">
+						    			<label class="nav-link form-inline my-2 my-lg-0 apadding"> 62079 <span class="sr-only"></span></label>
+						    		</li>
+						    		<li class="nav-link">
+						    			<label class="nav-link form-inline my-2 my-lg-0 bpadding"> Julio Rodriguez <span class="sr-only"></span></label>
+						    		</li>
+						    	</ul>
+						    </div>
+						    <form class="form-inline my-2 my-lg-0">
+						      <input class="form-control mr-sm-2" type="search" placeholder="Inserte ID de RFC" aria-label="Search">
+						      <button class="btn my-2 my-sm-0" type="submit" onclick="force_load_login()"><img src="./images/export.png"></img></button>
+						    </form>
+						  </div>
+				</nav>
+	</div>
+	<!-- starts the table for the RFC -->
+
+<section class="ftco-section">
+<div class="container">
+<div class="row justify-content-center">
+
+	<div class="col-md-6 text-center mb-5">
+		<h2 class="heading-section">RFC Aceptados</h2>
+	</div>
+	
+	<div class="bodytable">
+		<div class="row justify-content-center">
+		</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Invoce</th>
+									<th>Customer</th>
+									<th>Ship</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row"><a href="#">1001</a></th>
+									<td>Mark Otto</td>
+									<td>Japan</td>
+									<td><a href="#" class="btn status paid">Progress</a></td>
+								</tr>
+								<tr>
+									<th scope="row">1001</th>
+									<td>Mark Otto</td>
+									<td>Japan</td>
+									<td><a href="#" class="btn status pending">Open</a></td>
+								</tr>
+								<tr>
+									<th scope="row">1001</th>
+									<td>Mark Otto</td>
+									<td>Japan</td>
+									<td><a href="#" class="btn status unpaid">On hold</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+</div>
+</section>
+
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/popper.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/select2.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
+
+<!--

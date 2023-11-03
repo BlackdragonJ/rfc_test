@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inicio</title>
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="./css/icon-font.css">
+<link rel="stylesheet" type="text/css" href="./css/bootstrapp.css">
+<link rel="stylesheet" type="text/css" href="./css/animate.css">
+<link rel="stylesheet" type="text/css" href="./css/hamburgers.css">
+<link rel="stylesheet" type="text/css" href="./css/select2.css">
+<link rel="stylesheet" type="text/css" href="./css/util.css">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<style type="text/css">
+
+	
+.parent button{
+  padding: 5px;
+ 	background-color: transparent;
+  font-size: 1.5em;
+  height: 700px;
+  border: 0px;
+  width: 390px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button1{
+	border-radius: 10px;
+}
+.parent button:active {
+  transform: translateY(2px);
+}
+
+.parent button:not(:first-child) {
+  margin-top: 10px;
+}
+.background{
+	background-color: rgb(0, 56, 101);	
+}
+
+strong{
+	font-weight: bold;
+}
+
+.apadding{
+	position: relative;
+	color: white;
+	right: 300px;
+}
+
+.bpadding{
+	position: relative;
+	color: white;
+	right: 300px;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+</style>
+</head>
+<body class="background">
+	<div>		
+				<nav class="navbar navbar-expand-lg navbar-dark" style="background: rgb(45, 140, 158);">
+						  <p class="navbar-brand" href="#">RFC</p>
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon"></span>
+						  </button>
+
+						  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						    <ul class="navbar-nav mr-auto">
+						      <li class="nav-item active">
+						        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+						      </li>
+						    </ul>
+						    <div>
+						    	<strong>
+						    	<ul class="navbar-nav mr-auto">
+						    		<li class="nav-link">
+						    			<label class="nav-link form-inline my-2 my-lg-0 apadding"> 62079 <span class="sr-only"></span></label>
+						    		</li>
+						    		<li class="nav-link">
+						    			<label class="nav-link form-inline my-2 my-lg-0 bpadding"> Julio Rodriguez <span class="sr-only"></span></label>
+						    		</li>
+						    	</ul>
+						    </div>
+						    <form class="form-inline my-2 my-lg-0">
+						      <input class="form-control mr-sm-2" type="search" placeholder="Inserte ID de RFC" aria-label="Search">
+						      <button class="btn my-2 my-sm-0" type="submit" onclick="force_load_login()"><img src="./images/logout_icon_151219.ico"></img></button>
+						    </form>
+						  </div>
+				</nav>
+	</div>
+<div class="parent">
+	<div>
+		<div>
+			<strong>
+					<br>
+				  <button class="btn btn-outline-primary button1" onclick="force_load_crearRFC()">Crear RFC</button>&nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+	   &nbsp<button class="btn btn-outline-warning button1" onclick="force_load_enProceso()">En Proceso</button>&nbsp  &nbsp  &nbsp  &nbsp  &nbsp
+					<button class="btn btn-outline-success button1" onclick="force_load_aceptados()">RFC Aceptados</button>
+			</strong>
+		</div>
+	</div>
+</div>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/popper.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/select2.min.js"></script>
+<script src="./js/main.js"></script>
+<script type="text/javascript" src="./js/verificarLogin.js"></script>
+<script type="text/javascript"> 
+	function force_load_crearRFC(){
+			window.location =
+				"file:///C:/Users/62079/Documents/SegTI_Ciberseguridad/RFC_Project/src/crearRFC.html"
+	}
+	function force_load_enProceso(){
+			window.location =
+				"file:///C:/Users/62079/Documents/SegTI_Ciberseguridad/RFC_Project/src/rfcProceso.html"
+	}
+	function force_load_aceptados(){
+			window.location =
+				"file:///C:/Users/62079/Documents/SegTI_Ciberseguridad/RFC_Project/src/rfcAceptado.html"		
+	}
+	function force_load_login(){
+			window.location =
+				"file:///C:/Users/62079/Documents/SegTI_Ciberseguridad/RFC_Project/src/login.html"		
+	}
+</script>
+
+</body>
+</html>
+<!--
+	background-image: url('./images/logobi.png') ;
